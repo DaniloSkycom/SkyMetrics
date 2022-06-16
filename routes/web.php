@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AutomateHourController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome hola');
+    return view('welcome');
 });
+
+Route::get("ScriptHoras", "AutomateHourController@index");
+Route::get("ScriptHorasLocal", "AutomateHourController@ViciLocal");
