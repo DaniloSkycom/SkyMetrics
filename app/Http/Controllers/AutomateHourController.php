@@ -72,7 +72,7 @@ class AutomateHourController extends Controller
         $listHoras_madrugada = vici_agent_log_local::where("user", "=", '101')->whereBetween("event_time", ['2017-07-13 00:00:00', '2017-07-13 05:59:59'])->get();
         $listHoras_dia = vici_agent_log_local::where("user", "=", '101')->whereBetween("event_time", ['2017-07-13 6:00:00', '2017-07-13 18:59:59'])->get();
         $listHoras_noche = vici_agent_log_local::where("user", "=", '101')->whereBetween("event_time", ['2017-07-13 19:00:00', '2017-07-13 23:59:59'])->get();
-        
+          
 
         foreach ($listHoras_madrugada as $key => $value) {
 
