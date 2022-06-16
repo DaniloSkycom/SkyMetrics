@@ -15,7 +15,7 @@ use App\Http\Controllers\AutomateHourController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'holita';
 });
 
 Route::get("ScriptHoras", "AutomateHourController@index");
