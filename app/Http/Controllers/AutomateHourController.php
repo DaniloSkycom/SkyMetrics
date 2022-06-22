@@ -9,7 +9,6 @@ use Illuminate\Http\Request;
 
 class AutomateHourController extends Controller
 {
-    
     public function index(){
 
         $listHorasCompletas = array();
@@ -62,7 +61,7 @@ class AutomateHourController extends Controller
 
         dd($listHorasCompletas);
 
-        return view("Script.ScriptVici", compact("listHoras_madrugada"));
+        return view("ScriptVici", compact("listHoras_madrugada"));
     }
 
     public function ViciLocal(){
@@ -118,7 +117,7 @@ class AutomateHourController extends Controller
 
         dd($listHorasCompletas);
 
-        return view("Script.ScriptVici", compact("listHoras_madrugada"));
+        return view("ScriptVici", compact("listHoras_madrugada"));
     }
 
 }

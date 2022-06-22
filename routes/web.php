@@ -1,22 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AutomateHourController;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-Route::get('/', function () {
-    return 'holita';
-});
 
 Route::get("ScriptHoras", "AutomateHourController@index");
 Route::get("ScriptHorasLocal", "AutomateHourController@ViciLocal");
+
+Auth::routes();
+Route::get('/', 'Auth\LoginController@showLoginForm')->name('login');
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+
+/* Rutas Protegidas */
+Route::group(['middleware' => ['auth']  ], function () {
+
+    Route::get('/home', 'HomeController@index');
+
+});
+
+URL::forceScheme('https');

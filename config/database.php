@@ -43,7 +43,7 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
-        'ViciExterno' => [
+        'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
@@ -83,6 +83,26 @@ return [
             ]) : [],
         ],
 
+        'ViciExterno' => [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST_THREE', '127.0.0.1'),
+            'port' => env('DB_PORT_THREE', '3306'),
+            'database' => env('DB_DATABASE_THREE', 'forge'),
+            'username' => env('DB_USERNAME_THREE', 'forge'),
+            'password' => env('DB_PASSWORD_THREE', ''),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
@@ -101,11 +121,11 @@ return [
         'sqlsrv' => [
             'driver' => 'sqlsrv',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'localhost'),
-            'port' => env('DB_PORT', '1433'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'host' => env('DB_HOST_FOUR', 'localhost'),
+            'port' => env('DB_PORT_FOUR', '1433'),
+            'database' => env('DB_DATABASE_FOUR', 'forge'),
+            'username' => env('DB_USERNAME_FOUR', 'forge'),
+            'password' => env('DB_PASSWORD_FOUR', ''),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,

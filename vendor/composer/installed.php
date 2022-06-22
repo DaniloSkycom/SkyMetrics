@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'v7.30.1',
-        'version' => '7.30.1.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '1fc66b2f89143db679597782245c12dc66a5cd1d',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -95,12 +95,12 @@
             'dev_requirement' => true,
         ),
         'facade/ignition' => array(
-            'pretty_version' => '2.17.5',
-            'version' => '2.17.5.0',
+            'pretty_version' => '2.14.1',
+            'version' => '2.14.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../facade/ignition',
             'aliases' => array(),
-            'reference' => '1d71996f83c9a5a7807331b8986ac890352b7a0c',
+            'reference' => '6d89c4c99537f487ad29f646d57ebf107ef714ed',
             'dev_requirement' => true,
         ),
         'facade/ignition-contracts' => array(
@@ -374,12 +374,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'v7.30.1',
-            'version' => '7.30.1.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '1fc66b2f89143db679597782245c12dc66a5cd1d',
             'dev_requirement' => false,
         ),
         'laravel/tinker' => array(
@@ -389,6 +389,15 @@
             'install_path' => __DIR__ . '/../laravel/tinker',
             'aliases' => array(),
             'reference' => 'dff39b661e827dae6e092412f976658df82dbac5',
+            'dev_requirement' => false,
+        ),
+        'laravel/ui' => array(
+            'pretty_version' => 'v2.5.0',
+            'version' => '2.5.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laravel/ui',
+            'aliases' => array(),
+            'reference' => 'd01a705763c243b07be795e9d1bb47f89260f73d',
             'dev_requirement' => false,
         ),
         'league/commonmark' => array(
@@ -599,12 +608,12 @@
             'dev_requirement' => true,
         ),
         'psr/container' => array(
-            'pretty_version' => '1.1.2',
-            'version' => '1.1.2.0',
+            'pretty_version' => '1.1.1',
+            'version' => '1.1.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../psr/container',
             'aliases' => array(),
-            'reference' => '513e0666f7216c7459170d56df27dfcefe1689ea',
+            'reference' => '8622567409010282b7aeebe4bb841fe98b58dcaf',
             'dev_requirement' => false,
         ),
         'psr/container-implementation' => array(
@@ -685,8 +694,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0',
             ),
         ),
         'psr/simple-cache' => array(
